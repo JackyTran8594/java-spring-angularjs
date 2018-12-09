@@ -1,0 +1,27 @@
+
+<div id="_addproducts.html">
+
+    <div class="modal-header">
+        <h3 class="modal-title">{{config.label.titleDelete}}</h3>
+        <div class="button-close" ng-click="cancel()">
+            <i class="glyphicon glyphicon-remove x-close"></i>
+        </div>
+    </div>
+    <div class="modal-body">
+        <p>
+            <h3>
+                <i>
+                    <b>
+                        {{config.label.infoDelete}}
+                    </b>
+                </i>
+            </h3>
+        </p>
+    </div>
+    <div class="modal-footer">
+        <button prevent-default type="submit" class="btn btn-primary" ng-disabled="_form.$invalid" ng-click="remove()">{{config.label.btnDelete}}</button>
+        <button prevent-default class="btn btn-default" data-dismiss="modal" ng-click="cancel()">{{config.label.btnCancel}}</button>
+    </div>
+</div>
+
+
